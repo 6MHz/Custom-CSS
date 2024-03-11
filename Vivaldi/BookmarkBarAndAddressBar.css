@@ -1,0 +1,35 @@
+:root {
+    --bar-height: 35px; 
+    --bookmark-bar-width: 20%;
+}
+#browser:not(.fullscreen) #main .mainbar {
+    padding-left: var(--bookmark-bar-width);
+    height: var(--bar-height) !important;
+    width: 100%;
+    border-bottom: 0;
+    &>button,
+    & .window-buttongroup,
+    & .toolbar {
+        /* 高さ矯正 */
+        min-height: var(--bar-height) !important;
+        max-height: var(--bar-height) !important;
+        height: var(--bar-height) !important;
+        align-items: end !important;
+    }
+}
+.bookmark-bar {
+    position: fixed;
+    border-bottom-width: 0px;
+    /* ウィンドウ動かす用の余白 */
+    padding-left: 34px;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background: #0000;
+    height: var(--bar-height) !important;
+    width: var(--bookmark-bar-width);
+    & .observer {
+        margin: auto;
+        justify-content: start;
+    }
+}

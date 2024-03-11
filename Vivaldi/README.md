@@ -3,5 +3,5 @@
 設定によってはうまく機能しないと思う。
 # code
 ```css
-@import (https://sixghz.github.io/Custom-CSS/Vivaldi/BookmarkBarAndAddressBar.css)
+@import url(https://sixghz.github.io/Custom-CSS/Vivaldi/BookmarkBarAndAddressBar.css)
 ```
